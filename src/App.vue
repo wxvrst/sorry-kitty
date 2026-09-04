@@ -29,7 +29,7 @@ const createHeart = () => {
   setTimeout(() => heart.remove(), 2000);
 };
 
-const loveAudio = new Audio('/love.mp3');
+const loveAudio = new Audio('love.mp3');
 loveAudio.loop = true;
 
 const handleYES = () => {
