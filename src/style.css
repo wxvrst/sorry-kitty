@@ -18,7 +18,7 @@
 
 .pattern-bg {
 	min-height: 100vh;
-	background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='100'><text x='10' y='80' font-size='32' transform='rotate(24, 100, 50)' fill='rgba(255,100,200,0.7)' font-weight='bold'>sorry, love</text></svg>");
+	background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='180' height='100'><text x='10' y='80' font-size='32' transform='rotate(16, 100, 50)' fill='rgba(255,100,200,0.7)' font-weight='bold'>sorry, love</text></svg>");
 	background-repeat: repeat;
 	background-size: 200px 100px;
 }

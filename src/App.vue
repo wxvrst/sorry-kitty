@@ -5,10 +5,10 @@ const x = ref(56);
 const y = ref(50);
 
 const moveRandom = () => {
-  const maxX = 100 - 10;
+  const maxX = 100 - 20;
   const maxY = 100 - 10;
-  x.value = 10 + Math.random() * (maxX - 10);
-  y.value = 10 + Math.random() * (maxY - 10);
+  x.value = Math.random() * (maxX - 10);
+  y.value = 10+ Math.random() * (maxY - 10);
 };
 
 const YES = ref<boolean>(false);
@@ -76,9 +76,9 @@ const handleDear = () => {
 
 <template>
   <div v-if="visible"
-    class="absolute flex items-center justify-center h-screen w-screen text-4xl z-40 bg-rose-600 font-mono">
+    class="absolute flex items-center justify-center h-screen w-screen z-40 bg-rose-600 font-mono px-4">
     <button
-      class="border-2 rounded-md cursor-pointer px-8 py-2 text-4xl font-semibold font-mono bg-rose-500 transition-all duration-400 hover:scale-106 hover:bg-rose-400 drop-shadow-md drop-shadow-rose-200"
+      class="border-2 rounded-md text-2xl cursor-pointer px-8 py-2 font-semibold font-mono bg-rose-500 transition-all duration-400 hover:scale-106 hover:bg-rose-400 drop-shadow-md drop-shadow-rose-200"
       @click="handleDear">
       {{ buttonText }}
     </button>
@@ -101,7 +101,7 @@ const handleDear = () => {
       НЕТ
     </button>
     <div v-if="YES"
-      class="italic absolute flex items-center justify-center h-screen w-screen text-4xl z-40 bg-pink-600 font-mono">
+      class="italic absolute flex items-center justify-center h-screen w-screen text-4xl z-40 bg-pink-600 font-mono px-4">
       Я у тебя дурачок, но этот дурачок безумно тебя любит
     </div>
   </div>
